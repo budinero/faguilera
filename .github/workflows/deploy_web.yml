@@ -54,12 +54,23 @@ jobs:
           hugo -v
 
       # Copy build folder to remote using rsync
-      - name: Rsync Deployments Action
-        uses: Burnett01/rsync-deployments@5.2
+      - uses: actions/checkout@v3
+      - name: upload
+        uses: bxb100/action-upload-webdav@main
         with:
-          switches: -avzr --delete
-          path: public/
-          remote_path: /home/user/html/
-          remote_host: remote.host
-          remote_user: user
-          remote_key: $
+          webdav_address: ${{secrets.address}}
+          webdav_username: ${{secrets.username}}
+          webdav_password: ${{secrets.password}}
+          webdav_upload_path: "/nextcloud/remote.php/dav/files/faguilera"
+          files: "./public/**"
+          keep_structure: true
+      
+     # - name: Rsync Deployments Action
+     #   uses: Burnett01/rsync-deployments@5.2
+     #   with:
+     #     switches: -avzr --delete
+     #     path: public/
+     #     remote_path: /home/user/html/
+     #     remote_host: remote.host
+     #     remote_user: user
+     #     remote_key: $
