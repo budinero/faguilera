@@ -1,0 +1,65 @@
+name: Deployment to server
+
+# Github Action to generate a Hugo blog and deploy to webserver
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push events but only for the main branch
+  push:
+    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs the Hugo command to build public directory
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.90.1"
+          extended: true
+
+      # Clone the theme as a submodule
+      - name: Clone theme
+        run: git submodule update --init --recursive
+
+      # Setup node and npm
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "15"
+
+      # Install dependencies for the theme
+      - name: Install theme
+        run: |
+          npm install -g postcss-cli
+          npm install -g autoprefixer
+          cd themes/chringel
+          npm install
+
+      # Build the Hugo web site
+      - name: Hugo build
+        run: |
+          cd $GITHUB_WORKSPACE
+          hugo -v
+
+      # Copy build folder to remote using rsync
+      - name: Rsync Deployments Action
+        uses: Burnett01/rsync-deployments@5.2
+        with:
+          switches: -avzr --delete
+          path: public/
+          remote_path: /home/user/html/
+          remote_host: remote.host
+          remote_user: user
+          remote_key: $
