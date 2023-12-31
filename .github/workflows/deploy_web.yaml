@@ -50,10 +50,10 @@ jobs:
       - name: upload
         uses: bxb100/action-upload-webdav@main
         with:
-            webdav_address: https://gea.ing.unrc.edu.ar
+            webdav_address: https://gea.ing.unrc.edu.ar/nextcloud/remote.php/dav/files/faguilera
             webdav_username: ${{secrets.username}}
             webdav_password: ${{secrets.password}}
-            webdav_upload_path: "/nextcloud/remote.php/dav/files/faguilera/faguilera"
+            webdav_upload_path: "/faguilera"
             files: "./public/**"
             keep_structure: true
 
