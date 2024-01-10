@@ -49,7 +49,7 @@ sections:
       # Choose a user to display skills from (a folder name within `content/authors/`)
       username: admin
     design:
-      columns: '1'
+      columns: '3'
   - block: experience
     content:
       title: Experience
@@ -237,20 +237,19 @@ sections:
       text: |-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
+      email: gea@gmail.com
+      phone: +54 9358 5084033
+      appointment_url: ''
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+        street: Ruta Nac. 36 - Km. 601
+        city: Río Cuarto
+        region: Córdoba
+        postcode: 'X5804BYA'
+        country: Argentina
+        country_code: AR
+      directions: Grupo de Electrónica Aplicada, Facultad de Ingeniería, Universidad Nacional de Río Cuarto
       office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+        - 'Monday to Friday 8:00 to 20:00 (CMT-3)'  
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
         latitude: '-33.111632'
@@ -264,7 +263,7 @@ sections:
       autolink: true
       # Email form provider
       form:
-        provider: netlify
+        provider: ''
         formspree:
           id:
         netlify:
