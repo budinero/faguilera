@@ -3,7 +3,7 @@
 title: Facundo Aguilera
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Facu
 
 # Full name (for SEO)
 first_name: Facundo
