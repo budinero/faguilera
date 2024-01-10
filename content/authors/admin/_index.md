@@ -3,7 +3,7 @@
 title: Facundo Aguilera
 
 # Name pronunciation (optional)
-name_pronunciation: Facu
+name_pronunciation: Dr. Ing.
 
 # Full name (for SEO)
 first_name: Facundo
@@ -17,31 +17,32 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Investigador y docente
+role: Researcher/Teacher
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Universidad Nacional de Río Cuarto
+  - name: Grupo de Electrónica Aplicada, IITEMA, CONICET-UNRC, Argentina
     url: https://iitema.conicet.gov.ar/gea/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Investigando sobre vehículos eléctricos, tolerancia a fallas y microrredes eléctricas.
+bio: Researching and teaching about electric vehicles, microgrids, control and embededed systems
 
 # Interests to show in About widget
 interests:
-  - Vehículos eléctricos
-  - Microrredes eléctricas
-  - Energías renovables
-  - Sistemas embebidos
-  - Procesamiento de señales
+  - Electric vehicles
+  - Microgrids
+  - Renowable energies
+  - Embededed systems
+  - Digital control
+  - Signal processing
 
 # Education to show in About widget
 education:
   courses:
-    - course: Doctorado en Ciencias de la Ingeniería
-      institution: Universidad Nacional de Río Cuarto
+    - course: Doctorate in Engineering Sciences
+      institution: Universidad Nacional de Río Cuarto, Argentina
       year: 2015
-    - course: Ingeniería Electrónica con Orientación en Sistemas Digitales
-      institution: Massachusetts Institute of Technology
+    - course:  Electronic Engineering with a Focus on Digital Systems
+      institution: Universidad Nacional de Río Cuarto, Argentina
       year: 2009 
 
 # Skills
@@ -51,7 +52,7 @@ skills:
     items:
       - name: Python
         description: ''
-        percent: 80
+        percent: ''
         icon: python
         icon_pack: fab
       - name: Data Science
