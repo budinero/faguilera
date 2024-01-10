@@ -10,7 +10,7 @@ first_name: Facundo
 last_name: Aguilera
 
 # Status emoji
-status: Investigando
+status: 
   icon: ⚛
 
 # Is this the primary user of the site?
