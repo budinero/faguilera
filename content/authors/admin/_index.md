@@ -1,50 +1,48 @@
 ---
 # Display name
-title: 吳健雄
+title: Facundo Aguilera
 
 # Name pronunciation (optional)
 name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Facundo
+last_name: Aguilera
 
 # Status emoji
-status:
-  icon: ☕️
+status: Investigando
+  icon: ⚛
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
-
+role: Investigador y docente
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Universidad Nacional de Río Cuarto
+    url: https://iitema.conicet.gov.ar/gea/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Investigando sobre vehículos eléctricos, tolerancia a fallas y microrredes eléctricas.
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Vehículos eléctricos
+  - Microrredes eléctricas
+  - Energías renovables
+  - Sistemas embebidos
+  - Procesamiento de señales
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
+    - course: Doctorado en Ciencias de la Ingeniería
+      institution: Universidad Nacional de Río Cuarto
+      year: 2015
+    - course: Ingeniería Electrónica con Orientación en Sistemas Digitales
       institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+      year: 2009 
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
