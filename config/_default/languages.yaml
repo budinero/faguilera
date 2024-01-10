@@ -17,6 +17,6 @@ es:
     description: CV de Facundo Aguilera
   menu:
     main:
-      - name: Es
+      - name: es
         url: '#about'
         weight: 1
