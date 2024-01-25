@@ -3,7 +3,7 @@
 
 [[buttons]]
   id = "x"
-  url = "https://twitter.com/intent/tweet?url={url}&text={title}"
+  url = "https://twitter.com/intent/tweet?url={url}&text={title} @budinero_"
   title = "X"
   icon_pack = "fab"
   icon = "x"

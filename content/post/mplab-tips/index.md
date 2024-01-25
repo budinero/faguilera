@@ -57,7 +57,7 @@ Force a previous java version. You may use the java version included with MPLAB 
 ```bash
 mplab_ide --jdkhome /usr/local/microchip/mplabx/v6.15/sys/java/zulu8.64.0.19-ca-fx-jre8.0.345-linux_x64
 ```
-
+ 
 Add this command to your `MPLAB.desktop` file.
 
 [Comment](https://x.com/budinero_/status/1750646477095940453?s=20)
