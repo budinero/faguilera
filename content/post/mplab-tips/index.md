@@ -1,9 +1,9 @@
 ---
 title: MPLAB
-subtitle: Tips and Problems resolutions.
+subtitle: Tips and problems resolution.
 
 # Summary for listings and search engines
-summary: Tips and problems resolutions for the Microchip MPLAB IDE Software.
+summary: Tips and problems resolution using Microchip MPLAB IDE software.
 
 # Link this post with a project
 projects: []
@@ -37,6 +37,8 @@ tags:
 
 categories:
   - Software 
+
+share: true
 ---
  
 
@@ -57,3 +59,5 @@ mplab_ide --jdkhome /usr/local/microchip/mplabx/v6.15/sys/java/zulu8.64.0.19-ca-
 ```
 
 Add this command to your `MPLAB.desktop` file.
+
+[Comment](https://x.com/budinero_/status/1750646477095940453?s=20)
