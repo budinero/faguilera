@@ -11,22 +11,25 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: markdown
-    id: SkillsN
+   
+  - block: collection
+    id: skills
     content:
       title: Skills
-      subtitle: '[Wider list](https://www.linkedin.com/in/facundoaguilera/details/skills/)'
-      text: |2- 
+      subtitle: '[LinkedIn skills](https://www.linkedin.com/in/facundoaguilera/details/skills/)'
+      text: |-
         | **Software** | **Languages** | **Soft**  | 
         |----------|----------|----------|
         | MATLAB/Simulink      | C         | Problem-solving   |  
         | Code Coposer Studio  | C++       | Teamwork  |  
         | Vivado               | Qt        | Teaching  |
-        | Git                | VHDL/Verilog | Critical thinking  |  
-       
-         
-      design:
-       columns: '1'
+        | Git                | VHDL/Verilog | Critical thinking  | 
+      filters:
+        folders:
+          - none
+    design:
+      columns: '2'
+      view: citation    
  # - block: skills
  #   content:
  #     title: Skills
@@ -37,7 +40,7 @@ sections:
  #     columns: '2'
   - block: experience
     content:
-      title: Experience
+      title: Current position
       # Date format for experience
       #   Refer to https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
@@ -193,13 +196,14 @@ sections:
   #    columns: '2'
   #    view: card
   #
+  
   - block: collection
     id: publications
     content:
       title: Recent Publications
       text: |-
         {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
+        [Filter publications](./publication/).
         {{% /callout %}}
       filters:
         folders:
