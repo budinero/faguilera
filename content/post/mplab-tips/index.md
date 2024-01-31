@@ -45,7 +45,7 @@ share: true
 ## Problem: Unrecognized VM option 'UseConcMarkSweepGC'
  > Found in v6.15
 
-Program doen't start, showin the following message:
+Program doesn't start, showing the following message:
 ```bash
 Unrecognized VM option 'UseConcMarkSweepGC'
 Error: Could not create the Java Virtual Machine.
