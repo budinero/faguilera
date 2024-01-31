@@ -1,9 +1,9 @@
 ---
 # Documentation: https://hugoblox.com/docs/managing-content/
 
-title: "MATLAB"
-subtitle: "Tips and problems resolution."
-summary: "Tips and problems resolution for MATLAB software"
+title: "MATLAB Notes"
+subtitle: "Notes on tips and problems resolution."
+summary: "Notes on tips and problems resolution for MATLAB software"
 authors: 
   - admin 
 tags: 
@@ -91,5 +91,4 @@ Start MATLAB with the following parameter:
 ```bash
 -useStartupFolderPref
 ```
- 
  

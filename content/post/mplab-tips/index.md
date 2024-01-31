@@ -1,9 +1,9 @@
 ---
-title: MPLAB
-subtitle: Tips and problems resolution.
+title: MPLAB X IDE Notes
+subtitle: Notes on tips and problems resolution.
 
 # Summary for listings and search engines
-summary: Tips and problems resolution using Microchip MPLAB IDE software.
+summary: Notes on tips and problems resolution using Microchip MPLAB IDE software.
 
 # Link this post with a project
 projects: []
