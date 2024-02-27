@@ -2,8 +2,8 @@
 # Documentation: https://hugoblox.com/docs/managing-content/
 
 title: "MATLAB Notes"
-subtitle: "Notes on tips and problems resolution."
-summary: "Notes on tips and problems resolution for MATLAB software"
+subtitle: "Notes on tips and troubleshooting."
+summary: "Notes on tips and troubleshooting for MATLAB software on Linux"
 authors: 
   - admin 
 tags: 
@@ -34,6 +34,40 @@ image:
 projects: []
 share: true
 ---
+
+# Dark theme problems with MATLAB/Simulink
+> Tested with _Debian Trixie_ GNU/Linux / KDE/Plasma / MATLAB 2013a. 
+
+#### Error:
+When using a dark theme in Linux, Simulink has a broken color scheme.
+
+![simulink_dark](simulink_dark.png)
+
+#### Solution:
+Simulink uses some elements of Qt, so some configurations can be changed with environment variables. Theme preferences are
+defined in the ~/.config folder, thus simple steps can be followed to use MATLAB with its default light theme and system dark theme (using KDE). 
+
+1. Close any MATLAB instance
+2. Select a light theme, i.e.
+```bash
+plasma-apply-colorscheme BreezeClassic
+```
+3. Make a copy of the .config folder
+```bash
+cp ~/.config ~/.config_matlab
+```
+4. Return back to your preferred dark theme
+```bash
+plasma-apply-colorscheme BreezeDark
+```
+5. Start MATLAB with the modified .config folder and test.
+```bash
+export XDG_CONFIG_HOME=~/.config_matlab; matlab
+```
+6. Configure the desktop MATLAB launcher
+![alt text](matlab_launcher.png)
+
+_More info: https://la.mathworks.com/matlabcentral/answers/1848238-simulink-has-broken-color-scheme_
 
 # Installing MATLAB 2022a/2023a on linux
 
