@@ -86,8 +86,8 @@ mkdir exclude
 mv libfreetype.so* exclude/
 ```
 
-# Error when loading any plot
-
+# Error when loading plots
+ 
 #### Error:
 ```bash
 `com.jogamp.opengl.GLException: X11GLXDrawableFactory`
