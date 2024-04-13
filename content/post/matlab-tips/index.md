@@ -69,7 +69,7 @@ export XDG_CONFIG_HOME=~/.config_matlab; matlab
 
 _More info: https://la.mathworks.com/matlabcentral/answers/1848238-simulink-has-broken-color-scheme_
 
-# Can't run MATLAB 2022a/2023a installer
+# MATLAB 2022a/2023a installer doesn't run
 
 > Tested with _Debian 12 (Bookworm)_ GNU/Linux  
 
