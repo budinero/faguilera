@@ -39,12 +39,12 @@ share: true
 > Tested with _Debian Trixie_ GNU/Linux / KDE/Plasma / MATLAB 2013a. 
 
 #### Error:
-When using a dark theme in Linux, Simulink has a broken color scheme.
+Simulink has a broken color scheme when using dark theme in Linux.
 
 ![simulink_dark](simulink_dark.png)
 
 #### Solution:
-Simulink uses some elements of Qt, so some configurations can be changed with environment variables. Theme preferences are
+Simulink uses some Qt libraries, so some configurations can be changed with environment variables. Theme preferences are
 defined in the ~/.config folder, thus simple steps can be followed to use MATLAB with its default light theme and system dark theme (using KDE). 
 
 1. Close any MATLAB instance
@@ -69,11 +69,9 @@ export XDG_CONFIG_HOME=~/.config_matlab; matlab
 
 _More info: https://la.mathworks.com/matlabcentral/answers/1848238-simulink-has-broken-color-scheme_
 
-# Installing MATLAB 2022a/2023a on linux
+# Can't run MATLAB 2022a/2023a installer
 
-> Tested with _Debian 12 (Bookworm)_ GNU/Linux
- 
-## Install
+> Tested with _Debian 12 (Bookworm)_ GNU/Linux  
 
 #### Error:
 ```bash
@@ -88,7 +86,8 @@ mkdir exclude
 mv libfreetype.so* exclude/
 ```
 
-## After install, load plot error
+# Error when loading any plot
+
 #### Error:
 ```bash
 `com.jogamp.opengl.GLException: X11GLXDrawableFactory`
@@ -100,7 +99,7 @@ nano (intall_dir)/bin/glnxa64/java.opts
 ```
 Paste `-Djogl.disable.openglarbcontext=1` inside the text file.
 
-## After install, Simulink error
+# Simulink error "Failed to load bundle..."
 #### Error
 ```bash
 Failed to load bundle #429: .../R2022a/bin/glnxa64/libmwsl_graphical_classes.so
@@ -113,7 +112,7 @@ mkdir exclude
 mv libfreetype.so.6* exclude/
 ```
 
-## Does not respect default folder settings
+# MATLAB startup doesn't respect default folder settings
 
 #### Problem
 Default folder settings is not respected
