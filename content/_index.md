@@ -122,6 +122,24 @@ sections:
   #        url: ''
   #  design:
   #    columns: '2'
+  - block: accomplishments
+    id: awards
+    content:
+      title: Awards
+      # Note: `username` refers to the user's folder name in `content/authors/` 
+      items:
+      - organization: IEEE VTS 
+        organization_url: 'https://vtsociety.org/'
+        title: IEEE VTS MVC Challenge 2024
+        url: ''
+        certificate_url: ''
+        date_start: '2024-04-01'
+        date_end: ''
+        description: 'First prize. The IEEE Motor Vehicle Challenge (MVC), supported by IEEE Vehicular Technology Society (VTS), is an annual international challenge to find an appropriate energy management strategy to improve electric vehicles performance'
+    design:
+      # Choose a layout view
+      view: compact
+      columns: '2'
   - block: collection
     id: posts
     content:

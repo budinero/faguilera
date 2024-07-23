@@ -45,6 +45,14 @@ education:
       institution: Universidad Nacional de Río Cuarto, Argentina
       year: 2009 
 
+# Education to show in About widget
+education:
+  courses:
+    - course: Doctorate in Engineering Sciences
+      institution: Universidad Nacional de Río Cuarto, Argentina
+      year: 2015
+
+
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
