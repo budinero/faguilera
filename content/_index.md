@@ -50,10 +50,10 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Assistant Researchr
+        - title: Researcher
           company: CONICET
           company_url: 'https://iitema.conicet.gov.ar/gea/'
-          company_logo: ''
+          company_logo: 'conicet'
           location: Río Cuarto, Córdoba, Argentina
           date_start: '2018-11-01'
           date_end: ''
