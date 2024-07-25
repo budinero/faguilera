@@ -65,7 +65,7 @@ sections:
               Responsibilities include:
               * Applied research: theory, hardware implementation, validation and publication
               * Research project management
-              * Supervision of postgraduate and undergraduate students
+              * Supervision of postgraduate and undergraduate students 
         - title: Professor of Programmable Logic Device, Digital Signal Processing and Control
           company: Universidad Nacional de Río Cuarto
           company_url: 'https://www.ing.unrc.edu.ar'
