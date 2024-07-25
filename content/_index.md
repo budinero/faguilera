@@ -69,7 +69,7 @@ sections:
         - title: Professor of Programmable Logic Device, Digital Signal Processing and Control
           company: Universidad Nacional de Río Cuarto
           company_url: 'https://www.ing.unrc.edu.ar'
-          company_logo: 
+          company_logo: 'unrc'
           location: Río Cuarto, Córdoba, Argentina
           date_start: '2015-05-01'
           date_end: ''
